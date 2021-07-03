@@ -61,6 +61,7 @@ declare namespace ShopifyBuy {
     fetchQuery(query: Query): Promise<any[]>; // TODO fix to be a type: DOC: Fetches a collection by handle on the shop. Assuming it does not give products
   }
   export interface CustomerResource {
+    fetch(customerAccessToken: string): Promise<any>;
     create(input: any): Promise<customerCreateResponse>;
     createAccessToken(input: any): Promise<any>;
     createAccessTokenWithMultipass(multipassToken: string): Promise<any>;
