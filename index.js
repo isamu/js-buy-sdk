@@ -1,5 +1,6 @@
 /*
-      The MIT License (MIT)
+@license
+The MIT License (MIT)
 
 Copyright (c) 2016 Shopify Inc.
 
@@ -22,7 +23,8 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-      */
+*/
+
 'use strict';
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
@@ -2296,7 +2298,7 @@ var Config = function () {
     if (attrs.hasOwnProperty('apiVersion')) {
       this.apiVersion = attrs.apiVersion;
     } else {
-      this.apiVersion = '2021-01';
+      this.apiVersion = '2021-10';
     }
 
     if (attrs.hasOwnProperty('source')) {
@@ -2468,6 +2470,8 @@ function query(client) {
         alias: "src"
       });
       image.add("altText");
+      image.add("width");
+      image.add("height");
     });
     root.add("selectedOptions", function (selectedOptions) {
       selectedOptions.add("name");
@@ -2517,6 +2521,8 @@ function query(client) {
           node.add("id");
           node.add("src");
           node.add("altText");
+          node.add("width");
+          node.add("height");
         });
       });
     });
@@ -2601,6 +2607,8 @@ function query$1(client) {
         alias: "src"
       });
       image.add("altText");
+      image.add("width");
+      image.add("height");
     });
     root.add("selectedOptions", function (selectedOptions) {
       selectedOptions.add("name");
@@ -2650,6 +2658,8 @@ function query$1(client) {
           node.add("id");
           node.add("src");
           node.add("altText");
+          node.add("width");
+          node.add("height");
         });
       });
     });
@@ -2737,6 +2747,8 @@ function query$2(client) {
         alias: "src"
       });
       image.add("altText");
+      image.add("width");
+      image.add("height");
     });
     root.add("selectedOptions", function (selectedOptions) {
       selectedOptions.add("name");
@@ -2786,6 +2798,8 @@ function query$2(client) {
           node.add("id");
           node.add("src");
           node.add("altText");
+          node.add("width");
+          node.add("height");
         });
       });
     });
@@ -2882,6 +2896,8 @@ function query$3(client) {
         alias: "src"
       });
       image.add("altText");
+      image.add("width");
+      image.add("height");
     });
     root.add("selectedOptions", function (selectedOptions) {
       selectedOptions.add("name");
@@ -2931,6 +2947,8 @@ function query$3(client) {
           node.add("id");
           node.add("src");
           node.add("altText");
+          node.add("width");
+          node.add("height");
         });
       });
     });
@@ -3183,6 +3201,8 @@ function query$5(client) {
         alias: "src"
       });
       image.add("altText");
+      image.add("width");
+      image.add("height");
     });
     root.add("selectedOptions", function (selectedOptions) {
       selectedOptions.add("name");
@@ -3247,6 +3267,8 @@ function query$5(client) {
           node.add("id");
           node.add("src");
           node.add("altText");
+          node.add("width");
+          node.add("height");
         });
       });
     });
@@ -3401,6 +3423,8 @@ function query$7(client) {
         alias: "src"
       });
       image.add("altText");
+      image.add("width");
+      image.add("height");
     });
     root.add("selectedOptions", function (selectedOptions) {
       selectedOptions.add("name");
@@ -3465,6 +3489,8 @@ function query$7(client) {
           node.add("id");
           node.add("src");
           node.add("altText");
+          node.add("width");
+          node.add("height");
         });
       });
     });
@@ -3577,6 +3603,8 @@ function query$8(client) {
         alias: "src"
       });
       image.add("altText");
+      image.add("width");
+      image.add("height");
     });
     root.add("selectedOptions", function (selectedOptions) {
       selectedOptions.add("name");
@@ -3626,6 +3654,8 @@ function query$8(client) {
           node.add("id");
           node.add("src");
           node.add("altText");
+          node.add("width");
+          node.add("height");
         });
       });
     });
@@ -4036,6 +4066,8 @@ function query$11(client) {
         alias: "src"
       });
       image.add("altText");
+      image.add("width");
+      image.add("height");
     });
     root.add("selectedOptions", function (selectedOptions) {
       selectedOptions.add("name");
@@ -4355,6 +4387,8 @@ function query$12(client) {
         alias: "src"
       });
       image.add("altText");
+      image.add("width");
+      image.add("height");
     });
     root.add("selectedOptions", function (selectedOptions) {
       selectedOptions.add("name");
@@ -4721,6 +4755,8 @@ function query$14(client) {
         alias: "src"
       });
       image.add("altText");
+      image.add("width");
+      image.add("height");
     });
     root.add("selectedOptions", function (selectedOptions) {
       selectedOptions.add("name");
@@ -5059,6 +5095,8 @@ function query$15(client) {
         alias: "src"
       });
       image.add("altText");
+      image.add("width");
+      image.add("height");
     });
     root.add("selectedOptions", function (selectedOptions) {
       selectedOptions.add("name");
@@ -5397,6 +5435,8 @@ function query$16(client) {
         alias: "src"
       });
       image.add("altText");
+      image.add("width");
+      image.add("height");
     });
     root.add("selectedOptions", function (selectedOptions) {
       selectedOptions.add("name");
@@ -5728,6 +5768,8 @@ function query$17(client) {
         alias: "src"
       });
       image.add("altText");
+      image.add("width");
+      image.add("height");
     });
     root.add("selectedOptions", function (selectedOptions) {
       selectedOptions.add("name");
@@ -6066,6 +6108,8 @@ function query$18(client) {
         alias: "src"
       });
       image.add("altText");
+      image.add("width");
+      image.add("height");
     });
     root.add("selectedOptions", function (selectedOptions) {
       selectedOptions.add("name");
@@ -6404,6 +6448,8 @@ function query$19(client) {
         alias: "src"
       });
       image.add("altText");
+      image.add("width");
+      image.add("height");
     });
     root.add("selectedOptions", function (selectedOptions) {
       selectedOptions.add("name");
@@ -6741,6 +6787,8 @@ function query$20(client) {
         alias: "src"
       });
       image.add("altText");
+      image.add("width");
+      image.add("height");
     });
     root.add("selectedOptions", function (selectedOptions) {
       selectedOptions.add("name");
@@ -7078,6 +7126,8 @@ function query$21(client) {
         alias: "src"
       });
       image.add("altText");
+      image.add("width");
+      image.add("height");
     });
     root.add("selectedOptions", function (selectedOptions) {
       selectedOptions.add("name");
@@ -7416,6 +7466,8 @@ function query$22(client) {
         alias: "src"
       });
       image.add("altText");
+      image.add("width");
+      image.add("height");
     });
     root.add("selectedOptions", function (selectedOptions) {
       selectedOptions.add("name");
@@ -7754,6 +7806,8 @@ function query$23(client) {
         alias: "src"
       });
       image.add("altText");
+      image.add("width");
+      image.add("height");
     });
     root.add("selectedOptions", function (selectedOptions) {
       selectedOptions.add("name");
@@ -8092,6 +8146,8 @@ function query$24(client) {
         alias: "src"
       });
       image.add("altText");
+      image.add("width");
+      image.add("height");
     });
     root.add("selectedOptions", function (selectedOptions) {
       selectedOptions.add("name");
@@ -9474,7 +9530,7 @@ var ImageResource = function (_Resource) {
   return ImageResource;
 }(Resource);
 
-var version = "2.11.0";
+var version = "2.13.0";
 
 var AppliedGiftCard = {
   "name": "AppliedGiftCard",
@@ -10097,9 +10153,11 @@ var Image = {
   "kind": "OBJECT",
   "fieldBaseTypes": {
     "altText": "String",
+    "height": "Int",
     "id": "ID",
     "originalSrc": "URL",
-    "src": "URL"
+    "src": "URL",
+    "width": "Int"
   },
   "implementsNode": false
 };
@@ -10215,6 +10273,7 @@ var Mutation$1 = {
   },
   "implementsNode": false,
   "relayInputObjectBaseTypes": {
+    "cartCreate": "CartInput",
     "checkoutAttributesUpdate": "CheckoutAttributesUpdateInput",
     "checkoutAttributesUpdateV2": "CheckoutAttributesUpdateV2Input",
     "checkoutCreate": "CheckoutCreateInput",
@@ -10229,7 +10288,7 @@ var Node = {
   "name": "Node",
   "kind": "INTERFACE",
   "fieldBaseTypes": {},
-  "possibleTypes": ["AppliedGiftCard", "Article", "Blog", "Checkout", "CheckoutLineItem", "Collection", "Comment", "ExternalVideo", "MailingAddress", "MediaImage", "Metafield", "Model3d", "Order", "Page", "Payment", "Product", "ProductOption", "ProductVariant", "ShopPolicy", "Video"]
+  "possibleTypes": ["AppliedGiftCard", "Article", "Blog", "Cart", "CartLine", "Checkout", "CheckoutLineItem", "Collection", "Comment", "ExternalVideo", "Location", "MailingAddress", "MediaImage", "Metafield", "Model3d", "Order", "Page", "Payment", "Product", "ProductOption", "ProductVariant", "ShopPolicy", "Video"]
 };
 
 var Order = {
