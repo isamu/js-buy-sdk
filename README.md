@@ -44,11 +44,11 @@ View our [Changelog](https://github.com/Shopify/js-buy-sdk/blob/master/CHANGELOG
 ## Installation
 **With Yarn:**
 ```bash
-$ yarn add shopify-buy
+$ yarn add https://github.com/isamu/js-buy-sdk.git#customerResourceBuild
 ```
 **With NPM:**
 ```bash
-$ npm install shopify-buy
+$ npm install https://github.com/isamu/js-buy-sdk.git#customerResourceBuild
 ```
 
 **CDN:**
