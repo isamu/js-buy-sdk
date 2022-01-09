@@ -61,7 +61,8 @@ declare namespace ShopifyBuy {
     fetchQuery(query: Query): Promise<any[]>; // TODO fix to be a type: DOC: Fetches a collection by handle on the shop. Assuming it does not give products
   }
   export interface CustomerResource {
-    fetch(customerAccessToken: string): Promise<any>;
+    fetch(input: any): Promise<any>;
+    fetchOrders(input: any, first: any, options: any): Promise<any>;
     create(input: any): Promise<customerCreateResponse>;
     createAccessToken(input: any): Promise<any>;
     createAccessTokenWithMultipass(multipassToken: string): Promise<any>;
@@ -81,7 +82,10 @@ declare namespace ShopifyBuy {
       addressId: string
     ): Promise<any>;
     recover(email: string): Promise<any>;
-    reset(id: string, input: any): Promise<any>;
+    reset(
+      id: string,
+      input: customerResetInput
+    ): Promise<customerResetResponse>;
     resetByUrl(resetUrl: string, password: string): Promise<any>;
     update(customerAccessToken: string, customer: any): Promise<any>;
   }
@@ -93,11 +97,23 @@ declare namespace ShopifyBuy {
   export interface customer {
     id: string;
   }
+  export interface customerResetInput {
+    password: string;
+    resetToken: string;
+  }
   export interface customerCreateResponse {
     customer: customer;
     customerUserErrors: customerUserError[];
   }
-
+  export interface customerAccessToken {
+    accessToken: string;
+    expiresAt: string;
+  }
+  export interface customerResetResponse {
+    customer: customer;
+    customerAccessToken: customerAccessToken;
+    customerUserErrors: customerUserError;
+  }
   export interface CheckoutResource {
     create(
       email?: string,
@@ -107,12 +123,11 @@ declare namespace ShopifyBuy {
       customAttributes?: AttributeInput[]
     ): Promise<Cart>;
 
-
     associateCustomer(
       checkoutId: string | number,
-      storefrontAccessToken: string;
+      storefrontAccessToken: string
     ): Promise<Any>;
-    
+
     fetch(id: string): Promise<Cart>;
 
     addLineItems(
@@ -180,6 +195,7 @@ declare namespace ShopifyBuy {
      * A product description.
      */
     description: string;
+    descriptionHtml: string;
 
     /**
      * Product unique ID
@@ -225,7 +241,8 @@ declare namespace ShopifyBuy {
      * The product title
      */
     title: string;
-
+    productType: string;
+    availableForSale: boolean;
     /**
      * The product’s vendor name
      */
@@ -280,6 +297,8 @@ declare namespace ShopifyBuy {
      */
     price: string;
 
+    priceV2: any;
+    productType: string;
     /**
      * ID of product variant belongs to
      */
@@ -434,7 +453,6 @@ declare namespace ShopifyBuy {
      * Product title of variant's parent product.
      */
     title: string;
-
     /**
      * ID of line item variant.
      */
