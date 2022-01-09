@@ -2298,7 +2298,7 @@ var Config = function () {
     if (attrs.hasOwnProperty('apiVersion')) {
       this.apiVersion = attrs.apiVersion;
     } else {
-      this.apiVersion = '2021-10';
+      this.apiVersion = '2022-01';
     }
 
     if (attrs.hasOwnProperty('source')) {
@@ -2432,28 +2432,6 @@ function query(client) {
       priceV2.add("amount");
       priceV2.add("currencyCode");
     });
-    root.add("presentmentPrices", {
-      args: {
-        first: 20
-      }
-    }, function (presentmentPrices) {
-      presentmentPrices.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
-      presentmentPrices.add("edges", function (edges) {
-        edges.add("node", function (node) {
-          node.add("price", function (price) {
-            price.add("amount");
-            price.add("currencyCode");
-          });
-          node.add("compareAtPrice", function (compareAtPrice) {
-            compareAtPrice.add("amount");
-            compareAtPrice.add("currencyCode");
-          });
-        });
-      });
-    });
     root.add("weight");
     root.add("availableForSale", {
       alias: "available"
@@ -2568,28 +2546,6 @@ function query$1(client) {
     root.add("priceV2", function (priceV2) {
       priceV2.add("amount");
       priceV2.add("currencyCode");
-    });
-    root.add("presentmentPrices", {
-      args: {
-        first: 20
-      }
-    }, function (presentmentPrices) {
-      presentmentPrices.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
-      presentmentPrices.add("edges", function (edges) {
-        edges.add("node", function (node) {
-          node.add("price", function (price) {
-            price.add("amount");
-            price.add("currencyCode");
-          });
-          node.add("compareAtPrice", function (compareAtPrice) {
-            compareAtPrice.add("amount");
-            compareAtPrice.add("currencyCode");
-          });
-        });
-      });
     });
     root.add("weight");
     root.add("availableForSale", {
@@ -2708,28 +2664,6 @@ function query$2(client) {
     root.add("priceV2", function (priceV2) {
       priceV2.add("amount");
       priceV2.add("currencyCode");
-    });
-    root.add("presentmentPrices", {
-      args: {
-        first: 20
-      }
-    }, function (presentmentPrices) {
-      presentmentPrices.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
-      presentmentPrices.add("edges", function (edges) {
-        edges.add("node", function (node) {
-          node.add("price", function (price) {
-            price.add("amount");
-            price.add("currencyCode");
-          });
-          node.add("compareAtPrice", function (compareAtPrice) {
-            compareAtPrice.add("amount");
-            compareAtPrice.add("currencyCode");
-          });
-        });
-      });
     });
     root.add("weight");
     root.add("availableForSale", {
@@ -2857,28 +2791,6 @@ function query$3(client) {
     root.add("priceV2", function (priceV2) {
       priceV2.add("amount");
       priceV2.add("currencyCode");
-    });
-    root.add("presentmentPrices", {
-      args: {
-        first: 20
-      }
-    }, function (presentmentPrices) {
-      presentmentPrices.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
-      presentmentPrices.add("edges", function (edges) {
-        edges.add("node", function (node) {
-          node.add("price", function (price) {
-            price.add("amount");
-            price.add("currencyCode");
-          });
-          node.add("compareAtPrice", function (compareAtPrice) {
-            compareAtPrice.add("amount");
-            compareAtPrice.add("currencyCode");
-          });
-        });
-      });
     });
     root.add("weight");
     root.add("availableForSale", {
@@ -3163,28 +3075,6 @@ function query$5(client) {
       priceV2.add("amount");
       priceV2.add("currencyCode");
     });
-    root.add("presentmentPrices", {
-      args: {
-        first: 20
-      }
-    }, function (presentmentPrices) {
-      presentmentPrices.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
-      presentmentPrices.add("edges", function (edges) {
-        edges.add("node", function (node) {
-          node.add("price", function (price) {
-            price.add("amount");
-            price.add("currencyCode");
-          });
-          node.add("compareAtPrice", function (compareAtPrice) {
-            compareAtPrice.add("amount");
-            compareAtPrice.add("currencyCode");
-          });
-        });
-      });
-    });
     root.add("weight");
     root.add("availableForSale", {
       alias: "available"
@@ -3385,28 +3275,6 @@ function query$7(client) {
       priceV2.add("amount");
       priceV2.add("currencyCode");
     });
-    root.add("presentmentPrices", {
-      args: {
-        first: 20
-      }
-    }, function (presentmentPrices) {
-      presentmentPrices.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
-      presentmentPrices.add("edges", function (edges) {
-        edges.add("node", function (node) {
-          node.add("price", function (price) {
-            price.add("amount");
-            price.add("currencyCode");
-          });
-          node.add("compareAtPrice", function (compareAtPrice) {
-            compareAtPrice.add("amount");
-            compareAtPrice.add("currencyCode");
-          });
-        });
-      });
-    });
     root.add("weight");
     root.add("availableForSale", {
       alias: "available"
@@ -3564,28 +3432,6 @@ function query$8(client) {
     root.add("priceV2", function (priceV2) {
       priceV2.add("amount");
       priceV2.add("currencyCode");
-    });
-    root.add("presentmentPrices", {
-      args: {
-        first: 20
-      }
-    }, function (presentmentPrices) {
-      presentmentPrices.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
-      presentmentPrices.add("edges", function (edges) {
-        edges.add("node", function (node) {
-          node.add("price", function (price) {
-            price.add("amount");
-            price.add("currencyCode");
-          });
-          node.add("compareAtPrice", function (compareAtPrice) {
-            compareAtPrice.add("amount");
-            compareAtPrice.add("currencyCode");
-          });
-        });
-      });
     });
     root.add("weight");
     root.add("availableForSale", {
@@ -3882,7 +3728,6 @@ function query$9(client) {
   var document = client.document();
   document.addQuery(function (root) {
     root.add("shop", function (shop) {
-      shop.add("currencyCode");
       shop.add("paymentSettings", function (paymentSettings) {
         paymentSettings.add("enabledPresentmentCurrencies");
       });
@@ -4028,28 +3873,6 @@ function query$11(client) {
       priceV2.add("amount");
       priceV2.add("currencyCode");
     });
-    root.add("presentmentPrices", {
-      args: {
-        first: 20
-      }
-    }, function (presentmentPrices) {
-      presentmentPrices.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
-      presentmentPrices.add("edges", function (edges) {
-        edges.add("node", function (node) {
-          node.add("price", function (price) {
-            price.add("amount");
-            price.add("currencyCode");
-          });
-          node.add("compareAtPrice", function (compareAtPrice) {
-            compareAtPrice.add("amount");
-            compareAtPrice.add("currencyCode");
-          });
-        });
-      });
-    });
     root.add("weight");
     root.add("availableForSale", {
       alias: "available"
@@ -4107,7 +3930,7 @@ function query$11(client) {
       DiscountCodeApplication.add("applicable");
     });
     root.addInlineFragmentOn("ScriptDiscountApplication", function (ScriptDiscountApplication) {
-      ScriptDiscountApplication.add("description");
+      ScriptDiscountApplication.add("title");
     });
     root.addInlineFragmentOn("AutomaticDiscountApplication", function (AutomaticDiscountApplication) {
       AutomaticDiscountApplication.add("title");
@@ -4349,28 +4172,6 @@ function query$12(client) {
       priceV2.add("amount");
       priceV2.add("currencyCode");
     });
-    root.add("presentmentPrices", {
-      args: {
-        first: 20
-      }
-    }, function (presentmentPrices) {
-      presentmentPrices.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
-      presentmentPrices.add("edges", function (edges) {
-        edges.add("node", function (node) {
-          node.add("price", function (price) {
-            price.add("amount");
-            price.add("currencyCode");
-          });
-          node.add("compareAtPrice", function (compareAtPrice) {
-            compareAtPrice.add("amount");
-            compareAtPrice.add("currencyCode");
-          });
-        });
-      });
-    });
     root.add("weight");
     root.add("availableForSale", {
       alias: "available"
@@ -4428,7 +4229,7 @@ function query$12(client) {
       DiscountCodeApplication.add("applicable");
     });
     root.addInlineFragmentOn("ScriptDiscountApplication", function (ScriptDiscountApplication) {
-      ScriptDiscountApplication.add("description");
+      ScriptDiscountApplication.add("title");
     });
     root.addInlineFragmentOn("AutomaticDiscountApplication", function (AutomaticDiscountApplication) {
       AutomaticDiscountApplication.add("title");
@@ -4717,28 +4518,6 @@ function query$14(client) {
       priceV2.add("amount");
       priceV2.add("currencyCode");
     });
-    root.add("presentmentPrices", {
-      args: {
-        first: 20
-      }
-    }, function (presentmentPrices) {
-      presentmentPrices.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
-      presentmentPrices.add("edges", function (edges) {
-        edges.add("node", function (node) {
-          node.add("price", function (price) {
-            price.add("amount");
-            price.add("currencyCode");
-          });
-          node.add("compareAtPrice", function (compareAtPrice) {
-            compareAtPrice.add("amount");
-            compareAtPrice.add("currencyCode");
-          });
-        });
-      });
-    });
     root.add("weight");
     root.add("availableForSale", {
       alias: "available"
@@ -4796,7 +4575,7 @@ function query$14(client) {
       DiscountCodeApplication.add("applicable");
     });
     root.addInlineFragmentOn("ScriptDiscountApplication", function (ScriptDiscountApplication) {
-      ScriptDiscountApplication.add("description");
+      ScriptDiscountApplication.add("title");
     });
     root.addInlineFragmentOn("AutomaticDiscountApplication", function (AutomaticDiscountApplication) {
       AutomaticDiscountApplication.add("title");
@@ -5057,28 +4836,6 @@ function query$15(client) {
       priceV2.add("amount");
       priceV2.add("currencyCode");
     });
-    root.add("presentmentPrices", {
-      args: {
-        first: 20
-      }
-    }, function (presentmentPrices) {
-      presentmentPrices.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
-      presentmentPrices.add("edges", function (edges) {
-        edges.add("node", function (node) {
-          node.add("price", function (price) {
-            price.add("amount");
-            price.add("currencyCode");
-          });
-          node.add("compareAtPrice", function (compareAtPrice) {
-            compareAtPrice.add("amount");
-            compareAtPrice.add("currencyCode");
-          });
-        });
-      });
-    });
     root.add("weight");
     root.add("availableForSale", {
       alias: "available"
@@ -5136,7 +4893,7 @@ function query$15(client) {
       DiscountCodeApplication.add("applicable");
     });
     root.addInlineFragmentOn("ScriptDiscountApplication", function (ScriptDiscountApplication) {
-      ScriptDiscountApplication.add("description");
+      ScriptDiscountApplication.add("title");
     });
     root.addInlineFragmentOn("AutomaticDiscountApplication", function (AutomaticDiscountApplication) {
       AutomaticDiscountApplication.add("title");
@@ -5397,28 +5154,6 @@ function query$16(client) {
       priceV2.add("amount");
       priceV2.add("currencyCode");
     });
-    root.add("presentmentPrices", {
-      args: {
-        first: 20
-      }
-    }, function (presentmentPrices) {
-      presentmentPrices.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
-      presentmentPrices.add("edges", function (edges) {
-        edges.add("node", function (node) {
-          node.add("price", function (price) {
-            price.add("amount");
-            price.add("currencyCode");
-          });
-          node.add("compareAtPrice", function (compareAtPrice) {
-            compareAtPrice.add("amount");
-            compareAtPrice.add("currencyCode");
-          });
-        });
-      });
-    });
     root.add("weight");
     root.add("availableForSale", {
       alias: "available"
@@ -5476,7 +5211,7 @@ function query$16(client) {
       DiscountCodeApplication.add("applicable");
     });
     root.addInlineFragmentOn("ScriptDiscountApplication", function (ScriptDiscountApplication) {
-      ScriptDiscountApplication.add("description");
+      ScriptDiscountApplication.add("title");
     });
     root.addInlineFragmentOn("AutomaticDiscountApplication", function (AutomaticDiscountApplication) {
       AutomaticDiscountApplication.add("title");
@@ -5730,28 +5465,6 @@ function query$17(client) {
       priceV2.add("amount");
       priceV2.add("currencyCode");
     });
-    root.add("presentmentPrices", {
-      args: {
-        first: 20
-      }
-    }, function (presentmentPrices) {
-      presentmentPrices.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
-      presentmentPrices.add("edges", function (edges) {
-        edges.add("node", function (node) {
-          node.add("price", function (price) {
-            price.add("amount");
-            price.add("currencyCode");
-          });
-          node.add("compareAtPrice", function (compareAtPrice) {
-            compareAtPrice.add("amount");
-            compareAtPrice.add("currencyCode");
-          });
-        });
-      });
-    });
     root.add("weight");
     root.add("availableForSale", {
       alias: "available"
@@ -5809,7 +5522,7 @@ function query$17(client) {
       DiscountCodeApplication.add("applicable");
     });
     root.addInlineFragmentOn("ScriptDiscountApplication", function (ScriptDiscountApplication) {
-      ScriptDiscountApplication.add("description");
+      ScriptDiscountApplication.add("title");
     });
     root.addInlineFragmentOn("AutomaticDiscountApplication", function (AutomaticDiscountApplication) {
       AutomaticDiscountApplication.add("title");
@@ -6070,28 +5783,6 @@ function query$18(client) {
       priceV2.add("amount");
       priceV2.add("currencyCode");
     });
-    root.add("presentmentPrices", {
-      args: {
-        first: 20
-      }
-    }, function (presentmentPrices) {
-      presentmentPrices.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
-      presentmentPrices.add("edges", function (edges) {
-        edges.add("node", function (node) {
-          node.add("price", function (price) {
-            price.add("amount");
-            price.add("currencyCode");
-          });
-          node.add("compareAtPrice", function (compareAtPrice) {
-            compareAtPrice.add("amount");
-            compareAtPrice.add("currencyCode");
-          });
-        });
-      });
-    });
     root.add("weight");
     root.add("availableForSale", {
       alias: "available"
@@ -6149,7 +5840,7 @@ function query$18(client) {
       DiscountCodeApplication.add("applicable");
     });
     root.addInlineFragmentOn("ScriptDiscountApplication", function (ScriptDiscountApplication) {
-      ScriptDiscountApplication.add("description");
+      ScriptDiscountApplication.add("title");
     });
     root.addInlineFragmentOn("AutomaticDiscountApplication", function (AutomaticDiscountApplication) {
       AutomaticDiscountApplication.add("title");
@@ -6410,28 +6101,6 @@ function query$19(client) {
       priceV2.add("amount");
       priceV2.add("currencyCode");
     });
-    root.add("presentmentPrices", {
-      args: {
-        first: 20
-      }
-    }, function (presentmentPrices) {
-      presentmentPrices.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
-      presentmentPrices.add("edges", function (edges) {
-        edges.add("node", function (node) {
-          node.add("price", function (price) {
-            price.add("amount");
-            price.add("currencyCode");
-          });
-          node.add("compareAtPrice", function (compareAtPrice) {
-            compareAtPrice.add("amount");
-            compareAtPrice.add("currencyCode");
-          });
-        });
-      });
-    });
     root.add("weight");
     root.add("availableForSale", {
       alias: "available"
@@ -6489,7 +6158,7 @@ function query$19(client) {
       DiscountCodeApplication.add("applicable");
     });
     root.addInlineFragmentOn("ScriptDiscountApplication", function (ScriptDiscountApplication) {
-      ScriptDiscountApplication.add("description");
+      ScriptDiscountApplication.add("title");
     });
     root.addInlineFragmentOn("AutomaticDiscountApplication", function (AutomaticDiscountApplication) {
       AutomaticDiscountApplication.add("title");
@@ -6749,28 +6418,6 @@ function query$20(client) {
       priceV2.add("amount");
       priceV2.add("currencyCode");
     });
-    root.add("presentmentPrices", {
-      args: {
-        first: 20
-      }
-    }, function (presentmentPrices) {
-      presentmentPrices.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
-      presentmentPrices.add("edges", function (edges) {
-        edges.add("node", function (node) {
-          node.add("price", function (price) {
-            price.add("amount");
-            price.add("currencyCode");
-          });
-          node.add("compareAtPrice", function (compareAtPrice) {
-            compareAtPrice.add("amount");
-            compareAtPrice.add("currencyCode");
-          });
-        });
-      });
-    });
     root.add("weight");
     root.add("availableForSale", {
       alias: "available"
@@ -6828,7 +6475,7 @@ function query$20(client) {
       DiscountCodeApplication.add("applicable");
     });
     root.addInlineFragmentOn("ScriptDiscountApplication", function (ScriptDiscountApplication) {
-      ScriptDiscountApplication.add("description");
+      ScriptDiscountApplication.add("title");
     });
     root.addInlineFragmentOn("AutomaticDiscountApplication", function (AutomaticDiscountApplication) {
       AutomaticDiscountApplication.add("title");
@@ -7088,28 +6735,6 @@ function query$21(client) {
       priceV2.add("amount");
       priceV2.add("currencyCode");
     });
-    root.add("presentmentPrices", {
-      args: {
-        first: 20
-      }
-    }, function (presentmentPrices) {
-      presentmentPrices.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
-      presentmentPrices.add("edges", function (edges) {
-        edges.add("node", function (node) {
-          node.add("price", function (price) {
-            price.add("amount");
-            price.add("currencyCode");
-          });
-          node.add("compareAtPrice", function (compareAtPrice) {
-            compareAtPrice.add("amount");
-            compareAtPrice.add("currencyCode");
-          });
-        });
-      });
-    });
     root.add("weight");
     root.add("availableForSale", {
       alias: "available"
@@ -7167,7 +6792,7 @@ function query$21(client) {
       DiscountCodeApplication.add("applicable");
     });
     root.addInlineFragmentOn("ScriptDiscountApplication", function (ScriptDiscountApplication) {
-      ScriptDiscountApplication.add("description");
+      ScriptDiscountApplication.add("title");
     });
     root.addInlineFragmentOn("AutomaticDiscountApplication", function (AutomaticDiscountApplication) {
       AutomaticDiscountApplication.add("title");
@@ -7428,28 +7053,6 @@ function query$22(client) {
       priceV2.add("amount");
       priceV2.add("currencyCode");
     });
-    root.add("presentmentPrices", {
-      args: {
-        first: 20
-      }
-    }, function (presentmentPrices) {
-      presentmentPrices.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
-      presentmentPrices.add("edges", function (edges) {
-        edges.add("node", function (node) {
-          node.add("price", function (price) {
-            price.add("amount");
-            price.add("currencyCode");
-          });
-          node.add("compareAtPrice", function (compareAtPrice) {
-            compareAtPrice.add("amount");
-            compareAtPrice.add("currencyCode");
-          });
-        });
-      });
-    });
     root.add("weight");
     root.add("availableForSale", {
       alias: "available"
@@ -7507,7 +7110,7 @@ function query$22(client) {
       DiscountCodeApplication.add("applicable");
     });
     root.addInlineFragmentOn("ScriptDiscountApplication", function (ScriptDiscountApplication) {
-      ScriptDiscountApplication.add("description");
+      ScriptDiscountApplication.add("title");
     });
     root.addInlineFragmentOn("AutomaticDiscountApplication", function (AutomaticDiscountApplication) {
       AutomaticDiscountApplication.add("title");
@@ -7768,28 +7371,6 @@ function query$23(client) {
       priceV2.add("amount");
       priceV2.add("currencyCode");
     });
-    root.add("presentmentPrices", {
-      args: {
-        first: 20
-      }
-    }, function (presentmentPrices) {
-      presentmentPrices.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
-      presentmentPrices.add("edges", function (edges) {
-        edges.add("node", function (node) {
-          node.add("price", function (price) {
-            price.add("amount");
-            price.add("currencyCode");
-          });
-          node.add("compareAtPrice", function (compareAtPrice) {
-            compareAtPrice.add("amount");
-            compareAtPrice.add("currencyCode");
-          });
-        });
-      });
-    });
     root.add("weight");
     root.add("availableForSale", {
       alias: "available"
@@ -7847,7 +7428,7 @@ function query$23(client) {
       DiscountCodeApplication.add("applicable");
     });
     root.addInlineFragmentOn("ScriptDiscountApplication", function (ScriptDiscountApplication) {
-      ScriptDiscountApplication.add("description");
+      ScriptDiscountApplication.add("title");
     });
     root.addInlineFragmentOn("AutomaticDiscountApplication", function (AutomaticDiscountApplication) {
       AutomaticDiscountApplication.add("title");
@@ -8108,28 +7689,6 @@ function query$24(client) {
       priceV2.add("amount");
       priceV2.add("currencyCode");
     });
-    root.add("presentmentPrices", {
-      args: {
-        first: 20
-      }
-    }, function (presentmentPrices) {
-      presentmentPrices.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
-      presentmentPrices.add("edges", function (edges) {
-        edges.add("node", function (node) {
-          node.add("price", function (price) {
-            price.add("amount");
-            price.add("currencyCode");
-          });
-          node.add("compareAtPrice", function (compareAtPrice) {
-            compareAtPrice.add("amount");
-            compareAtPrice.add("currencyCode");
-          });
-        });
-      });
-    });
     root.add("weight");
     root.add("availableForSale", {
       alias: "available"
@@ -8187,7 +7746,7 @@ function query$24(client) {
       DiscountCodeApplication.add("applicable");
     });
     root.addInlineFragmentOn("ScriptDiscountApplication", function (ScriptDiscountApplication) {
-      ScriptDiscountApplication.add("description");
+      ScriptDiscountApplication.add("title");
     });
     root.addInlineFragmentOn("AutomaticDiscountApplication", function (AutomaticDiscountApplication) {
       AutomaticDiscountApplication.add("title");
@@ -8873,6 +8432,193 @@ function query$26(client) {
 
 function query$27(client) {
   var document = client.document();
+  var spreads = {};
+  var variables = {};
+  variables.__defaultOperation__ = {};
+  variables.__defaultOperation__.customerAccessToken = client.variable("customerAccessToken", "String!");
+  variables.__defaultOperation__.first = client.variable("first", "Int!");
+  variables.__defaultOperation__.last = client.variable("last", "Int");
+  variables.__defaultOperation__.after = client.variable("after", "String");
+  variables.__defaultOperation__.before = client.variable("before", "String");
+  variables.__defaultOperation__.reverse = client.variable("reverse", "Boolean");
+  spreads.VariantFragment = document.defineFragment("VariantFragment", "ProductVariant", function (root) {
+    root.add("id");
+    root.add("title");
+    root.add("price");
+    root.add("priceV2", function (priceV2) {
+      priceV2.add("amount");
+      priceV2.add("currencyCode");
+    });
+    root.add("weight");
+    root.add("availableForSale", {
+      alias: "available"
+    });
+    root.add("sku");
+    root.add("compareAtPrice");
+    root.add("compareAtPriceV2", function (compareAtPriceV2) {
+      compareAtPriceV2.add("amount");
+      compareAtPriceV2.add("currencyCode");
+    });
+    root.add("image", function (image) {
+      image.add("id");
+      image.add("originalSrc", {
+        alias: "src"
+      });
+      image.add("altText");
+      image.add("width");
+      image.add("height");
+    });
+    root.add("selectedOptions", function (selectedOptions) {
+      selectedOptions.add("name");
+      selectedOptions.add("value");
+    });
+    root.add("unitPrice", function (unitPrice) {
+      unitPrice.add("amount");
+      unitPrice.add("currencyCode");
+    });
+    root.add("unitPriceMeasurement", function (unitPriceMeasurement) {
+      unitPriceMeasurement.add("measuredType");
+      unitPriceMeasurement.add("quantityUnit");
+      unitPriceMeasurement.add("quantityValue");
+      unitPriceMeasurement.add("referenceUnit");
+      unitPriceMeasurement.add("referenceValue");
+    });
+  });
+  spreads.VariantWithProductFragment = document.defineFragment("VariantWithProductFragment", "ProductVariant", function (root) {
+    root.addFragment(spreads.VariantFragment);
+    root.add("product", function (product) {
+      product.add("id");
+      product.add("handle");
+    });
+  });
+  document.addQuery([variables.__defaultOperation__.customerAccessToken, variables.__defaultOperation__.first, variables.__defaultOperation__.last, variables.__defaultOperation__.after, variables.__defaultOperation__.before, variables.__defaultOperation__.reverse], function (root) {
+    root.add("customer", {
+      args: {
+        customerAccessToken: variables.__defaultOperation__.customerAccessToken
+      }
+    }, function (customer) {
+      customer.add("id");
+      customer.add("firstName");
+      customer.add("lastName");
+      customer.add("orders", {
+        args: {
+          first: variables.__defaultOperation__.first,
+          last: variables.__defaultOperation__.last,
+          after: variables.__defaultOperation__.after,
+          before: variables.__defaultOperation__.before,
+          reverse: variables.__defaultOperation__.reverse
+        }
+      }, function (orders) {
+        orders.add("pageInfo", function (pageInfo) {
+          pageInfo.add("hasNextPage");
+          pageInfo.add("hasPreviousPage");
+        });
+        orders.add("edges", function (edges) {
+          edges.add("cursor");
+          edges.add("node", function (node) {
+            node.add("lineItems", {
+              args: {
+                first: 5
+              }
+            }, function (lineItems) {
+              lineItems.add("pageInfo", function (pageInfo) {
+                pageInfo.add("hasNextPage");
+                pageInfo.add("hasPreviousPage");
+              });
+              lineItems.add("edges", function (edges) {
+                edges.add("cursor");
+                edges.add("node", function (node) {
+                  node.add("currentQuantity");
+                  node.add("customAttributes", function (customAttributes) {
+                    customAttributes.add("key");
+                    customAttributes.add("value");
+                  });
+                  node.add("discountAllocations", function (discountAllocations) {
+                    discountAllocations.add("allocatedAmount", function (allocatedAmount) {
+                      allocatedAmount.add("amount");
+                      allocatedAmount.add("currencyCode");
+                    });
+                  });
+                  node.add("discountedTotalPrice", function (discountedTotalPrice) {
+                    discountedTotalPrice.add("amount");
+                    discountedTotalPrice.add("currencyCode");
+                  });
+                  node.add("originalTotalPrice", function (originalTotalPrice) {
+                    originalTotalPrice.add("amount");
+                    originalTotalPrice.add("currencyCode");
+                  });
+                  node.add("quantity");
+                  node.add("title");
+                  node.add("variant", function (variant) {
+                    variant.addFragment(spreads.VariantWithProductFragment);
+                  });
+                });
+              });
+            });
+            node.add("cancelReason");
+            node.add("canceledAt");
+            node.add("currencyCode");
+            node.add("currentSubtotalPrice", function (currentSubtotalPrice) {
+              currentSubtotalPrice.add("amount");
+              currentSubtotalPrice.add("currencyCode");
+            });
+            node.add("currentTotalDuties", function (currentTotalDuties) {
+              currentTotalDuties.add("amount");
+              currentTotalDuties.add("currencyCode");
+            });
+            node.add("currentTotalPrice", function (currentTotalPrice) {
+              currentTotalPrice.add("amount");
+              currentTotalPrice.add("currencyCode");
+            });
+            node.add("currentTotalTax", function (currentTotalTax) {
+              currentTotalTax.add("amount");
+            });
+            node.add("customerLocale");
+            node.add("customerUrl");
+            node.add("edited");
+            node.add("email");
+            node.add("financialStatus");
+            node.add("fulfillmentStatus");
+            node.add("id");
+            node.add("name");
+            node.add("orderNumber");
+            node.add("originalTotalDuties", function (originalTotalDuties) {
+              originalTotalDuties.add("amount");
+            });
+            node.add("originalTotalPrice", function (originalTotalPrice) {
+              originalTotalPrice.add("amount");
+            });
+            node.add("phone");
+            node.add("processedAt");
+            node.add("shippingAddress", function (shippingAddress) {
+              shippingAddress.add("country");
+            });
+            node.add("statusUrl");
+            node.add("subtotalPriceV2", function (subtotalPriceV2) {
+              subtotalPriceV2.add("amount");
+            });
+            node.add("totalPriceV2", function (totalPriceV2) {
+              totalPriceV2.add("amount");
+            });
+            node.add("totalRefundedV2", function (totalRefundedV2) {
+              totalRefundedV2.add("amount");
+            });
+            node.add("totalShippingPriceV2", function (totalShippingPriceV2) {
+              totalShippingPriceV2.add("amount");
+            });
+            node.add("totalTaxV2", function (totalTaxV2) {
+              totalTaxV2.add("amount");
+            });
+          });
+        });
+      });
+    });
+  });
+  return document;
+}
+
+function query$28(client) {
+  var document = client.document();
   var variables = {};
   variables.customerCreate = {};
   variables.customerCreate.input = client.variable("input", "CustomerCreateInput!");
@@ -8895,7 +8641,7 @@ function query$27(client) {
   return document;
 }
 
-function query$28(client) {
+function query$29(client) {
   var document = client.document();
   var variables = {};
   variables.customerAccessTokenCreate = {};
@@ -8920,7 +8666,7 @@ function query$28(client) {
   return document;
 }
 
-function query$29(client) {
+function query$30(client) {
   var document = client.document();
   var variables = {};
   variables.customerAccessTokenCreateWithMultipass = {};
@@ -8945,7 +8691,7 @@ function query$29(client) {
   return document;
 }
 
-function query$30(client) {
+function query$31(client) {
   var document = client.document();
   var variables = {};
   variables.customerAccessTokenDelete = {};
@@ -8967,7 +8713,7 @@ function query$30(client) {
   return document;
 }
 
-function query$31(client) {
+function query$32(client) {
   var document = client.document();
   var variables = {};
   variables.customerAccessTokenRenew = {};
@@ -8991,7 +8737,7 @@ function query$31(client) {
   return document;
 }
 
-function query$32(client) {
+function query$33(client) {
   var document = client.document();
   var variables = {};
   variables.customerActivateByUrl = {};
@@ -9021,7 +8767,7 @@ function query$32(client) {
   return document;
 }
 
-function query$33(client) {
+function query$34(client) {
   var document = client.document();
   var variables = {};
   variables.customerActivate = {};
@@ -9051,7 +8797,7 @@ function query$33(client) {
   return document;
 }
 
-function query$34(client) {
+function query$35(client) {
   var document = client.document();
   var variables = {};
   variables.customerAddressCreate = {};
@@ -9077,7 +8823,7 @@ function query$34(client) {
   return document;
 }
 
-function query$35(client) {
+function query$36(client) {
   var document = client.document();
   var variables = {};
   variables.customerAddressDelete = {};
@@ -9101,7 +8847,7 @@ function query$35(client) {
   return document;
 }
 
-function query$36(client) {
+function query$37(client) {
   var document = client.document();
   var variables = {};
   variables.customerAddressUpdate = {};
@@ -9129,7 +8875,7 @@ function query$36(client) {
   return document;
 }
 
-function query$37(client) {
+function query$38(client) {
   var document = client.document();
   var variables = {};
   variables.customerDefaultAddressUpdate = {};
@@ -9155,7 +8901,7 @@ function query$37(client) {
   return document;
 }
 
-function query$38(client) {
+function query$39(client) {
   var document = client.document();
   var variables = {};
   variables.customerRecover = {};
@@ -9176,7 +8922,7 @@ function query$38(client) {
   return document;
 }
 
-function query$39(client) {
+function query$40(client) {
   var document = client.document();
   var variables = {};
   variables.customerResetByUrl = {};
@@ -9206,7 +8952,7 @@ function query$39(client) {
   return document;
 }
 
-function query$40(client) {
+function query$41(client) {
   var document = client.document();
   var variables = {};
   variables.customerReset = {};
@@ -9236,7 +8982,7 @@ function query$40(client) {
   return document;
 }
 
-function query$41(client) {
+function query$42(client) {
   var document = client.document();
   var variables = {};
   variables.customerUpdate = {};
@@ -9285,6 +9031,11 @@ var CustomerResource = function (_Resource) {
     value: function fetch(customerAccessToken) {
       return this.graphQLClient.send(query$26, { customerAccessToken: customerAccessToken }).then(defaultResolver('customer'));
     }
+  }, {
+    key: 'fetchOrders',
+    value: function fetchOrders(customerAccessToken, first) {
+      return this.graphQLClient.send(query$27, { customerAccessToken: customerAccessToken, first: first }).then(defaultResolver('customer'));
+    }
 
     /**
      * Creates a customer.
@@ -9308,7 +9059,7 @@ var CustomerResource = function (_Resource) {
   }, {
     key: 'create',
     value: function create(input) {
-      return this.graphQLClient.send(query$27, { input: input }).then(handleCustomerMutation('customerCreate'));
+      return this.graphQLClient.send(query$28, { input: input }).then(handleCustomerMutation('customerCreate'));
     }
 
     /**
@@ -9319,7 +9070,7 @@ var CustomerResource = function (_Resource) {
   }, {
     key: 'update',
     value: function update(customerAccessToken, customer) {
-      return this.graphQLClient.send(query$41, { customerAccessToken: customerAccessToken, customer: customer }).then(handleCustomerMutation('customerUpdate'));
+      return this.graphQLClient.send(query$42, { customerAccessToken: customerAccessToken, customer: customer }).then(handleCustomerMutation('customerUpdate'));
     }
 
     /**
@@ -9330,7 +9081,7 @@ var CustomerResource = function (_Resource) {
   }, {
     key: 'createAccessToken',
     value: function createAccessToken(input) {
-      return this.graphQLClient.send(query$28, { input: input }).then(handleCustomerMutation('customerAccessTokenCreate'));
+      return this.graphQLClient.send(query$29, { input: input }).then(handleCustomerMutation('customerAccessTokenCreate'));
     }
 
     /**
@@ -9341,7 +9092,7 @@ var CustomerResource = function (_Resource) {
   }, {
     key: 'deleteAccessToken',
     value: function deleteAccessToken(customerAccessToken) {
-      return this.graphQLClient.send(query$30, { customerAccessToken: customerAccessToken }).then(handleCustomerMutation('customerAccessTokenDelete'));
+      return this.graphQLClient.send(query$31, { customerAccessToken: customerAccessToken }).then(handleCustomerMutation('customerAccessTokenDelete'));
     }
 
     /**
@@ -9352,7 +9103,7 @@ var CustomerResource = function (_Resource) {
   }, {
     key: 'renewAccessToken',
     value: function renewAccessToken(customerAccessToken) {
-      return this.graphQLClient.send(query$31, { customerAccessToken: customerAccessToken }).then(handleCustomerMutation('customerAccessTokenRenew'));
+      return this.graphQLClient.send(query$32, { customerAccessToken: customerAccessToken }).then(handleCustomerMutation('customerAccessTokenRenew'));
     }
 
     /**
@@ -9363,7 +9114,7 @@ var CustomerResource = function (_Resource) {
   }, {
     key: 'createAccessTokenWithMultipass',
     value: function createAccessTokenWithMultipass(multipassToken) {
-      return this.graphQLClient.send(query$29, { multipassToken: multipassToken }).then(handleCustomerMutation('customerAccessTokenCreateWithMultipass'));
+      return this.graphQLClient.send(query$30, { multipassToken: multipassToken }).then(handleCustomerMutation('customerAccessTokenCreateWithMultipass'));
     }
 
     /**
@@ -9374,7 +9125,7 @@ var CustomerResource = function (_Resource) {
   }, {
     key: 'activate',
     value: function activate(id, input) {
-      return this.graphQLClient.send(query$33, { id: id, input: input }).then(handleCustomerMutation('customerActivate'));
+      return this.graphQLClient.send(query$34, { id: id, input: input }).then(handleCustomerMutation('customerActivate'));
     }
 
     /**
@@ -9385,7 +9136,7 @@ var CustomerResource = function (_Resource) {
   }, {
     key: 'activateByUrl',
     value: function activateByUrl(activationUrl, password) {
-      return this.graphQLClient.send(query$32, { activationUrl: activationUrl, password: password }).then(handleCustomerMutation('customerActivateByUrl'));
+      return this.graphQLClient.send(query$33, { activationUrl: activationUrl, password: password }).then(handleCustomerMutation('customerActivateByUrl'));
     }
 
     /**
@@ -9396,7 +9147,7 @@ var CustomerResource = function (_Resource) {
   }, {
     key: 'createAddress',
     value: function createAddress(customerAccessToken, address) {
-      return this.graphQLClient.send(query$34, { customerAccessToken: customerAccessToken, address: address }).then(handleCustomerMutation('customerAddressCreate'));
+      return this.graphQLClient.send(query$35, { customerAccessToken: customerAccessToken, address: address }).then(handleCustomerMutation('customerAddressCreate'));
     }
 
     /**
@@ -9407,7 +9158,7 @@ var CustomerResource = function (_Resource) {
   }, {
     key: 'deleteAddress',
     value: function deleteAddress(id, customerAccessToken) {
-      return this.graphQLClient.send(query$35, { id: id, customerAccessToken: customerAccessToken }).then(handleCustomerMutation('customerAddressDelete'));
+      return this.graphQLClient.send(query$36, { id: id, customerAccessToken: customerAccessToken }).then(handleCustomerMutation('customerAddressDelete'));
     }
 
     /**
@@ -9418,7 +9169,7 @@ var CustomerResource = function (_Resource) {
   }, {
     key: 'updateAddress',
     value: function updateAddress(customerAccessToken, id, address) {
-      return this.graphQLClient.send(query$36, { customerAccessToken: customerAccessToken, id: id, address: address }).then(handleCustomerMutation('customerAddressUpdate'));
+      return this.graphQLClient.send(query$37, { customerAccessToken: customerAccessToken, id: id, address: address }).then(handleCustomerMutation('customerAddressUpdate'));
     }
 
     /**
@@ -9429,7 +9180,7 @@ var CustomerResource = function (_Resource) {
   }, {
     key: 'updateDefaultAddress',
     value: function updateDefaultAddress(customerAccessToken, addressId) {
-      return this.graphQLClient.send(query$37, { customerAccessToken: customerAccessToken, addressId: addressId }).then(handleCustomerMutation('customerDefaultAddressUpdate'));
+      return this.graphQLClient.send(query$38, { customerAccessToken: customerAccessToken, addressId: addressId }).then(handleCustomerMutation('customerDefaultAddressUpdate'));
     }
 
     /**
@@ -9440,7 +9191,7 @@ var CustomerResource = function (_Resource) {
   }, {
     key: 'recover',
     value: function recover(email) {
-      return this.graphQLClient.send(query$38, { email: email }).then(handleCustomerMutation('customerRecover'));
+      return this.graphQLClient.send(query$39, { email: email }).then(handleCustomerMutation('customerRecover'));
     }
 
     /**
@@ -9451,7 +9202,7 @@ var CustomerResource = function (_Resource) {
   }, {
     key: 'reset',
     value: function reset(id, input) {
-      return this.graphQLClient.send(query$40, { id: id, input: input }).then(handleCustomerMutation('customerReset'));
+      return this.graphQLClient.send(query$41, { id: id, input: input }).then(handleCustomerMutation('customerReset'));
     }
 
     /**
@@ -9462,7 +9213,7 @@ var CustomerResource = function (_Resource) {
   }, {
     key: 'resetByUrl',
     value: function resetByUrl(resetUrl, password) {
-      return this.graphQLClient.send(query$39, { resetUrl: resetUrl, password: password }).then(handleCustomerMutation('customerResetByUrl'));
+      return this.graphQLClient.send(query$40, { resetUrl: resetUrl, password: password }).then(handleCustomerMutation('customerResetByUrl'));
     }
   }]);
   return CustomerResource;
@@ -9530,7 +9281,7 @@ var ImageResource = function (_Resource) {
   return ImageResource;
 }(Resource);
 
-var version = "2.13.0";
+var version = "2.14.0";
 
 var AppliedGiftCard = {
   "name": "AppliedGiftCard",
@@ -9860,7 +9611,8 @@ var Customer = {
   "fieldBaseTypes": {
     "firstName": "String",
     "id": "ID",
-    "lastName": "String"
+    "lastName": "String",
+    "orders": "OrderConnection"
   },
   "implementsNode": false
 };
@@ -10295,13 +10047,29 @@ var Order = {
   "name": "Order",
   "kind": "OBJECT",
   "fieldBaseTypes": {
+    "cancelReason": "OrderCancelReason",
+    "canceledAt": "DateTime",
     "currencyCode": "CurrencyCode",
+    "currentSubtotalPrice": "MoneyV2",
+    "currentTotalDuties": "MoneyV2",
+    "currentTotalPrice": "MoneyV2",
+    "currentTotalTax": "MoneyV2",
+    "customerLocale": "String",
     "customerUrl": "URL",
+    "edited": "Boolean",
+    "email": "String",
+    "financialStatus": "OrderFinancialStatus",
+    "fulfillmentStatus": "OrderFulfillmentStatus",
     "id": "ID",
     "lineItems": "OrderLineItemConnection",
+    "name": "String",
     "orderNumber": "Int",
+    "originalTotalDuties": "MoneyV2",
+    "originalTotalPrice": "MoneyV2",
+    "phone": "String",
     "processedAt": "DateTime",
     "shippingAddress": "MailingAddress",
+    "statusUrl": "URL",
     "subtotalPrice": "Money",
     "subtotalPriceV2": "MoneyV2",
     "totalPrice": "Money",
@@ -10316,11 +10084,50 @@ var Order = {
   "implementsNode": true
 };
 
+var OrderCancelReason = {
+  "name": "OrderCancelReason",
+  "kind": "ENUM"
+};
+
+var OrderConnection = {
+  "name": "OrderConnection",
+  "kind": "OBJECT",
+  "fieldBaseTypes": {
+    "edges": "OrderEdge",
+    "pageInfo": "PageInfo"
+  },
+  "implementsNode": false
+};
+
+var OrderEdge = {
+  "name": "OrderEdge",
+  "kind": "OBJECT",
+  "fieldBaseTypes": {
+    "cursor": "String",
+    "node": "Order"
+  },
+  "implementsNode": false
+};
+
+var OrderFinancialStatus = {
+  "name": "OrderFinancialStatus",
+  "kind": "ENUM"
+};
+
+var OrderFulfillmentStatus = {
+  "name": "OrderFulfillmentStatus",
+  "kind": "ENUM"
+};
+
 var OrderLineItem = {
   "name": "OrderLineItem",
   "kind": "OBJECT",
   "fieldBaseTypes": {
+    "currentQuantity": "Int",
     "customAttributes": "Attribute",
+    "discountAllocations": "DiscountAllocation",
+    "discountedTotalPrice": "MoneyV2",
+    "originalTotalPrice": "MoneyV2",
     "quantity": "Int",
     "title": "String",
     "variant": "ProductVariant"
@@ -10443,7 +10250,6 @@ var ProductVariant = {
     "compareAtPriceV2": "MoneyV2",
     "id": "ID",
     "image": "Image",
-    "presentmentPrices": "ProductVariantPricePairConnection",
     "price": "Money",
     "priceV2": "MoneyV2",
     "product": "Product",
@@ -10477,35 +10283,6 @@ var ProductVariantEdge = {
   "implementsNode": false
 };
 
-var ProductVariantPricePair = {
-  "name": "ProductVariantPricePair",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "compareAtPrice": "MoneyV2",
-    "price": "MoneyV2"
-  },
-  "implementsNode": false
-};
-
-var ProductVariantPricePairConnection = {
-  "name": "ProductVariantPricePairConnection",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "edges": "ProductVariantPricePairEdge",
-    "pageInfo": "PageInfo"
-  },
-  "implementsNode": false
-};
-
-var ProductVariantPricePairEdge = {
-  "name": "ProductVariantPricePairEdge",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "node": "ProductVariantPricePair"
-  },
-  "implementsNode": false
-};
-
 var QueryRoot = {
   "name": "QueryRoot",
   "kind": "OBJECT",
@@ -10526,7 +10303,7 @@ var ScriptDiscountApplication = {
   "name": "ScriptDiscountApplication",
   "kind": "OBJECT",
   "fieldBaseTypes": {
-    "description": "String"
+    "title": "String"
   },
   "implementsNode": false
 };
@@ -10557,7 +10334,6 @@ var Shop = {
   "name": "Shop",
   "kind": "OBJECT",
   "fieldBaseTypes": {
-    "currencyCode": "CurrencyCode",
     "description": "String",
     "moneyFormat": "String",
     "name": "String",
@@ -10701,6 +10477,11 @@ Types.types["MoneyV2"] = MoneyV2;
 Types.types["Mutation"] = Mutation$1;
 Types.types["Node"] = Node;
 Types.types["Order"] = Order;
+Types.types["OrderCancelReason"] = OrderCancelReason;
+Types.types["OrderConnection"] = OrderConnection;
+Types.types["OrderEdge"] = OrderEdge;
+Types.types["OrderFinancialStatus"] = OrderFinancialStatus;
+Types.types["OrderFulfillmentStatus"] = OrderFulfillmentStatus;
 Types.types["OrderLineItem"] = OrderLineItem;
 Types.types["OrderLineItemConnection"] = OrderLineItemConnection;
 Types.types["OrderLineItemEdge"] = OrderLineItemEdge;
@@ -10715,9 +10496,6 @@ Types.types["ProductOption"] = ProductOption;
 Types.types["ProductVariant"] = ProductVariant;
 Types.types["ProductVariantConnection"] = ProductVariantConnection;
 Types.types["ProductVariantEdge"] = ProductVariantEdge;
-Types.types["ProductVariantPricePair"] = ProductVariantPricePair;
-Types.types["ProductVariantPricePairConnection"] = ProductVariantPricePairConnection;
-Types.types["ProductVariantPricePairEdge"] = ProductVariantPricePairEdge;
 Types.types["QueryRoot"] = QueryRoot;
 Types.types["ScriptDiscountApplication"] = ScriptDiscountApplication;
 Types.types["SelectedOption"] = SelectedOption;

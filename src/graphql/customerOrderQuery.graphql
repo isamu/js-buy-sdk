@@ -1,0 +1,107 @@
+query($customerAccessToken: String!, $first: Int!, $last: Int, $after: String, $before: String, $reverse: Boolean) {
+  customer(customerAccessToken: $customerAccessToken) {
+    id
+    firstName
+    lastName
+    orders(first: $first, last: $last, after: $after, before: $before, reverse: $reverse) {
+      pageInfo {
+        hasNextPage
+        hasPreviousPage
+      }
+      edges {
+         cursor
+         node {
+           lineItems(first: 5) {
+             pageInfo {
+               hasNextPage
+               hasPreviousPage
+             }
+             edges {
+               cursor
+               node {
+                 currentQuantity
+                 customAttributes {
+                   key
+                   value
+                 }
+                 discountAllocations {
+                   allocatedAmount {
+                     amount
+                     currencyCode
+                   }
+                 }
+                 discountedTotalPrice {
+                    amount
+                    currencyCode
+                 }
+                 originalTotalPrice {
+                   amount
+                   currencyCode
+                 }
+                 quantity
+                 title
+                 variant {
+                   ...VariantWithProductFragment
+                 }
+               }
+             }
+           }
+           cancelReason
+           canceledAt
+           currencyCode
+           currentSubtotalPrice {
+             amount
+             currencyCode
+           }
+           currentTotalDuties {
+             amount
+             currencyCode
+           }
+           currentTotalPrice {
+             amount
+             currencyCode
+           }
+           currentTotalTax {
+             amount
+           }
+           customerLocale
+           customerUrl
+           edited
+           email
+           financialStatus
+           fulfillmentStatus
+           id
+           name
+           orderNumber
+           originalTotalDuties {
+             amount
+           }
+           originalTotalPrice {
+             amount
+           }
+           phone
+           processedAt
+           shippingAddress {
+            country
+           }
+           statusUrl
+           subtotalPriceV2 {
+             amount
+           }
+           totalPriceV2 {
+             amount
+           }
+           totalRefundedV2 {
+             amount
+           }
+           totalShippingPriceV2 {
+             amount
+           }
+           totalTaxV2 {
+             amount
+           }
+         }
+      }  
+    }
+  }
+}
