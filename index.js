@@ -9034,7 +9034,13 @@ var CustomerResource = function (_Resource) {
   }, {
     key: 'fetchOrders',
     value: function fetchOrders(customerAccessToken, first) {
-      return this.graphQLClient.send(query$27, { customerAccessToken: customerAccessToken, first: first }).then(defaultResolver('customer'));
+      var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      var last = options.last,
+          after = options.after,
+          before = options.before,
+          reverse = options.reverse;
+
+      return this.graphQLClient.send(query$27, { customerAccessToken: customerAccessToken, first: first, last: last, after: after, before: before, reverse: reverse }).then(defaultResolver('customer'));
     }
 
     /**

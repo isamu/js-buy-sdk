@@ -38,9 +38,10 @@ class CustomerResource extends Resource {
       .then(defaultResolver('customer'))
   }
 
-  fetchOrders(customerAccessToken, first) {
+  fetchOrders(customerAccessToken, first, options = {}) {
+    const { last, after, before, reverse } = options;
     return this.graphQLClient
-      .send(customerOrderQuery, {customerAccessToken, first})
+      .send(customerOrderQuery, {customerAccessToken, first, last, after, before, reverse })
       .then(defaultResolver('customer'))
   }
   
