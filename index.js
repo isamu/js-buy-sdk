@@ -2436,6 +2436,7 @@ function query(client) {
     root.add("availableForSale", {
       alias: "available"
     });
+    root.add("quantityAvailable");
     root.add("sku");
     root.add("compareAtPrice");
     root.add("compareAtPriceV2", function (compareAtPriceV2) {
@@ -2551,6 +2552,7 @@ function query$1(client) {
     root.add("availableForSale", {
       alias: "available"
     });
+    root.add("quantityAvailable");
     root.add("sku");
     root.add("compareAtPrice");
     root.add("compareAtPriceV2", function (compareAtPriceV2) {
@@ -2669,6 +2671,7 @@ function query$2(client) {
     root.add("availableForSale", {
       alias: "available"
     });
+    root.add("quantityAvailable");
     root.add("sku");
     root.add("compareAtPrice");
     root.add("compareAtPriceV2", function (compareAtPriceV2) {
@@ -2796,6 +2799,7 @@ function query$3(client) {
     root.add("availableForSale", {
       alias: "available"
     });
+    root.add("quantityAvailable");
     root.add("sku");
     root.add("compareAtPrice");
     root.add("compareAtPriceV2", function (compareAtPriceV2) {
@@ -3079,6 +3083,7 @@ function query$5(client) {
     root.add("availableForSale", {
       alias: "available"
     });
+    root.add("quantityAvailable");
     root.add("sku");
     root.add("compareAtPrice");
     root.add("compareAtPriceV2", function (compareAtPriceV2) {
@@ -3279,6 +3284,7 @@ function query$7(client) {
     root.add("availableForSale", {
       alias: "available"
     });
+    root.add("quantityAvailable");
     root.add("sku");
     root.add("compareAtPrice");
     root.add("compareAtPriceV2", function (compareAtPriceV2) {
@@ -3437,6 +3443,7 @@ function query$8(client) {
     root.add("availableForSale", {
       alias: "available"
     });
+    root.add("quantityAvailable");
     root.add("sku");
     root.add("compareAtPrice");
     root.add("compareAtPriceV2", function (compareAtPriceV2) {
@@ -3877,6 +3884,7 @@ function query$11(client) {
     root.add("availableForSale", {
       alias: "available"
     });
+    root.add("quantityAvailable");
     root.add("sku");
     root.add("compareAtPrice");
     root.add("compareAtPriceV2", function (compareAtPriceV2) {
@@ -4176,6 +4184,7 @@ function query$12(client) {
     root.add("availableForSale", {
       alias: "available"
     });
+    root.add("quantityAvailable");
     root.add("sku");
     root.add("compareAtPrice");
     root.add("compareAtPriceV2", function (compareAtPriceV2) {
@@ -4522,6 +4531,7 @@ function query$14(client) {
     root.add("availableForSale", {
       alias: "available"
     });
+    root.add("quantityAvailable");
     root.add("sku");
     root.add("compareAtPrice");
     root.add("compareAtPriceV2", function (compareAtPriceV2) {
@@ -4840,6 +4850,7 @@ function query$15(client) {
     root.add("availableForSale", {
       alias: "available"
     });
+    root.add("quantityAvailable");
     root.add("sku");
     root.add("compareAtPrice");
     root.add("compareAtPriceV2", function (compareAtPriceV2) {
@@ -5158,6 +5169,7 @@ function query$16(client) {
     root.add("availableForSale", {
       alias: "available"
     });
+    root.add("quantityAvailable");
     root.add("sku");
     root.add("compareAtPrice");
     root.add("compareAtPriceV2", function (compareAtPriceV2) {
@@ -5469,6 +5481,7 @@ function query$17(client) {
     root.add("availableForSale", {
       alias: "available"
     });
+    root.add("quantityAvailable");
     root.add("sku");
     root.add("compareAtPrice");
     root.add("compareAtPriceV2", function (compareAtPriceV2) {
@@ -5787,6 +5800,7 @@ function query$18(client) {
     root.add("availableForSale", {
       alias: "available"
     });
+    root.add("quantityAvailable");
     root.add("sku");
     root.add("compareAtPrice");
     root.add("compareAtPriceV2", function (compareAtPriceV2) {
@@ -6105,6 +6119,7 @@ function query$19(client) {
     root.add("availableForSale", {
       alias: "available"
     });
+    root.add("quantityAvailable");
     root.add("sku");
     root.add("compareAtPrice");
     root.add("compareAtPriceV2", function (compareAtPriceV2) {
@@ -6422,6 +6437,7 @@ function query$20(client) {
     root.add("availableForSale", {
       alias: "available"
     });
+    root.add("quantityAvailable");
     root.add("sku");
     root.add("compareAtPrice");
     root.add("compareAtPriceV2", function (compareAtPriceV2) {
@@ -6739,6 +6755,7 @@ function query$21(client) {
     root.add("availableForSale", {
       alias: "available"
     });
+    root.add("quantityAvailable");
     root.add("sku");
     root.add("compareAtPrice");
     root.add("compareAtPriceV2", function (compareAtPriceV2) {
@@ -7057,6 +7074,7 @@ function query$22(client) {
     root.add("availableForSale", {
       alias: "available"
     });
+    root.add("quantityAvailable");
     root.add("sku");
     root.add("compareAtPrice");
     root.add("compareAtPriceV2", function (compareAtPriceV2) {
@@ -7375,6 +7393,7 @@ function query$23(client) {
     root.add("availableForSale", {
       alias: "available"
     });
+    root.add("quantityAvailable");
     root.add("sku");
     root.add("compareAtPrice");
     root.add("compareAtPriceV2", function (compareAtPriceV2) {
@@ -7693,6 +7712,7 @@ function query$24(client) {
     root.add("availableForSale", {
       alias: "available"
     });
+    root.add("quantityAvailable");
     root.add("sku");
     root.add("compareAtPrice");
     root.add("compareAtPriceV2", function (compareAtPriceV2) {
@@ -8453,6 +8473,7 @@ function query$27(client) {
     root.add("availableForSale", {
       alias: "available"
     });
+    root.add("quantityAvailable");
     root.add("sku");
     root.add("compareAtPrice");
     root.add("compareAtPriceV2", function (compareAtPriceV2) {
@@ -9039,6 +9060,7 @@ var CustomerResource = function (_Resource) {
           after = options.after,
           before = options.before,
           reverse = options.reverse;
+
 
       return this.graphQLClient.send(query$27, { customerAccessToken: customerAccessToken, first: first, last: last, after: after, before: before, reverse: reverse }).then(defaultResolver('customer'));
     }
@@ -10259,6 +10281,7 @@ var ProductVariant = {
     "price": "Money",
     "priceV2": "MoneyV2",
     "product": "Product",
+    "quantityAvailable": "Int",
     "selectedOptions": "SelectedOption",
     "sku": "String",
     "title": "String",
