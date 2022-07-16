@@ -2298,7 +2298,7 @@ var Config = function () {
     if (attrs.hasOwnProperty('apiVersion')) {
       this.apiVersion = attrs.apiVersion;
     } else {
-      this.apiVersion = '2022-04';
+      this.apiVersion = '2022-07';
     }
 
     if (attrs.hasOwnProperty('source')) {
@@ -2445,7 +2445,7 @@ function query(client) {
     });
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -2498,7 +2498,9 @@ function query(client) {
         edges.add("cursor");
         edges.add("node", function (node) {
           node.add("id");
-          node.add("src");
+          node.add("url", {
+            alias: "src"
+          });
           node.add("altText");
           node.add("width");
           node.add("height");
@@ -2561,7 +2563,7 @@ function query$1(client) {
     });
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -2614,7 +2616,9 @@ function query$1(client) {
         edges.add("cursor");
         edges.add("node", function (node) {
           node.add("id");
-          node.add("src");
+          node.add("url", {
+            alias: "src"
+          });
           node.add("altText");
           node.add("width");
           node.add("height");
@@ -2680,7 +2684,7 @@ function query$2(client) {
     });
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -2733,7 +2737,9 @@ function query$2(client) {
         edges.add("cursor");
         edges.add("node", function (node) {
           node.add("id");
-          node.add("src");
+          node.add("url", {
+            alias: "src"
+          });
           node.add("altText");
           node.add("width");
           node.add("height");
@@ -2808,7 +2814,7 @@ function query$3(client) {
     });
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -2861,7 +2867,9 @@ function query$3(client) {
         edges.add("cursor");
         edges.add("node", function (node) {
           node.add("id");
-          node.add("src");
+          node.add("url", {
+            alias: "src"
+          });
           node.add("altText");
           node.add("width");
           node.add("height");
@@ -2924,7 +2932,7 @@ function query$4(client) {
     });
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -2977,7 +2985,9 @@ function query$4(client) {
         edges.add("cursor");
         edges.add("node", function (node) {
           node.add("id");
-          node.add("src");
+          node.add("url", {
+            alias: "src"
+          });
           node.add("altText");
           node.add("width");
           node.add("height");
@@ -3182,7 +3192,7 @@ function query$5(client) {
     root.add("title");
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -3228,7 +3238,7 @@ function query$6(client) {
     });
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -3260,7 +3270,7 @@ function query$6(client) {
     root.add("title");
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -3296,7 +3306,9 @@ function query$6(client) {
         edges.add("cursor");
         edges.add("node", function (node) {
           node.add("id");
-          node.add("src");
+          node.add("url", {
+            alias: "src"
+          });
           node.add("altText");
           node.add("width");
           node.add("height");
@@ -3368,7 +3380,7 @@ function query$7(client) {
     root.add("title");
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -3429,7 +3441,7 @@ function query$8(client) {
     });
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -3461,7 +3473,7 @@ function query$8(client) {
     root.add("title");
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -3497,7 +3509,9 @@ function query$8(client) {
         edges.add("cursor");
         edges.add("node", function (node) {
           node.add("id");
-          node.add("src");
+          node.add("url", {
+            alias: "src"
+          });
           node.add("altText");
           node.add("width");
           node.add("height");
@@ -3588,7 +3602,7 @@ function query$9(client) {
     });
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -3641,7 +3655,9 @@ function query$9(client) {
         edges.add("cursor");
         edges.add("node", function (node) {
           node.add("id");
-          node.add("src");
+          node.add("url", {
+            alias: "src"
+          });
           node.add("altText");
           node.add("width");
           node.add("height");
@@ -3674,7 +3690,7 @@ function query$9(client) {
     root.add("title");
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -4029,7 +4045,7 @@ function query$12(client) {
     });
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -4329,7 +4345,7 @@ function query$13(client) {
     });
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -4676,7 +4692,7 @@ function query$15(client) {
     });
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -4995,7 +5011,7 @@ function query$16(client) {
     });
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -5314,7 +5330,7 @@ function query$17(client) {
     });
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -5626,7 +5642,7 @@ function query$18(client) {
     });
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -5945,7 +5961,7 @@ function query$19(client) {
     });
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -6264,7 +6280,7 @@ function query$20(client) {
     });
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -6582,7 +6598,7 @@ function query$21(client) {
     });
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -6900,7 +6916,7 @@ function query$22(client) {
     });
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -7219,7 +7235,7 @@ function query$23(client) {
     });
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -7538,7 +7554,7 @@ function query$24(client) {
     });
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -7857,7 +7873,7 @@ function query$25(client) {
     });
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -8581,6 +8597,7 @@ function query$27(client) {
       customer.add("id");
       customer.add("firstName");
       customer.add("lastName");
+      customer.add("tags");
     });
   });
   return document;
@@ -8618,7 +8635,7 @@ function query$28(client) {
     });
     root.add("image", function (image) {
       image.add("id");
-      image.add("originalSrc", {
+      image.add("url", {
         alias: "src"
       });
       image.add("altText");
@@ -9445,7 +9462,7 @@ var ImageResource = function (_Resource) {
   return ImageResource;
 }(Resource);
 
-var version = "2.15.1";
+var version = "2.16.1";
 
 var AppliedGiftCard = {
   "name": "AppliedGiftCard",
@@ -9776,7 +9793,8 @@ var Customer = {
     "firstName": "String",
     "id": "ID",
     "lastName": "String",
-    "orders": "OrderConnection"
+    "orders": "OrderConnection",
+    "tags": "String"
   },
   "implementsNode": false
 };
@@ -10071,8 +10089,7 @@ var Image = {
     "altText": "String",
     "height": "Int",
     "id": "ID",
-    "originalSrc": "URL",
-    "src": "URL",
+    "url": "URL",
     "width": "Int"
   },
   "implementsNode": false
@@ -10190,7 +10207,6 @@ var Mutation$1 = {
   "implementsNode": false,
   "relayInputObjectBaseTypes": {
     "cartCreate": "CartInput",
-    "checkoutAttributesUpdate": "CheckoutAttributesUpdateInput",
     "checkoutAttributesUpdateV2": "CheckoutAttributesUpdateV2Input",
     "checkoutCreate": "CheckoutCreateInput",
     "customerAccessTokenCreate": "CustomerAccessTokenCreateInput",
@@ -10204,7 +10220,7 @@ var Node = {
   "name": "Node",
   "kind": "INTERFACE",
   "fieldBaseTypes": {},
-  "possibleTypes": ["AppliedGiftCard", "Article", "Blog", "Cart", "CartLine", "Checkout", "CheckoutLineItem", "Collection", "Comment", "ExternalVideo", "GenericFile", "Location", "MailingAddress", "MediaImage", "Menu", "MenuItem", "Metafield", "Model3d", "Order", "Page", "Payment", "Product", "ProductOption", "ProductVariant", "Shop", "ShopPolicy", "Video"]
+  "possibleTypes": ["AppliedGiftCard", "Article", "Blog", "Cart", "CartLine", "Checkout", "CheckoutLineItem", "Collection", "Comment", "ExternalVideo", "GenericFile", "Location", "MailingAddress", "MediaImage", "Menu", "MenuItem", "Metafield", "Model3d", "Order", "Page", "Payment", "Product", "ProductOption", "ProductVariant", "Shop", "ShopPolicy", "UrlRedirect", "Video"]
 };
 
 var Order = {
